@@ -1,26 +1,27 @@
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 @keyframes slide-in-bottom {
     0% {
+        transform: translateY(40px);
         opacity: 0;
-        transform: translateY(40px)
     }
 
     to {
+        transform: translateY(0);
         opacity: 1;
-        transform: translateY(0)
     }
 }
 
-@keyframes slide-in-left {
-    0% {
-        opacity: 0;
-        transform: translate(-40px)
-    }
-
-    to {
-        opacity: 1;
-        transform: translate(0)
-    }
-}
 .lorem-ipsum-is {
     margin: 0;
     position: relative;
@@ -113,9 +114,15 @@
     height: 100%;
     transition: opacity 2s ease;
     z-index: 1;
-    
+    /* background-image: url("https://images.pexels.com/photos/7144184/pexels-photo-7144184.jpeg?cs=srgb&dl=pexels-antoni-shkraba-7144184.jpg&fm=jpg"); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    /* visibility: hidden; */
 }
 
+/* .container.loaded .background {
+    left: 100%;
+} */
 
 .lorem-ipsum-is-container1 img {
     display: block;
@@ -148,6 +155,14 @@
     opacity: 1;
 }
 
+
+
+/* .lorem-ipsum-is-container1 {
+    position: absolute;
+    top: 34px;
+    left: 41px;
+    line-height: 28px;
+} */
 
 
 
